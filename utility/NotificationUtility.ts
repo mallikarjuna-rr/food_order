@@ -16,8 +16,8 @@ export const ExpiryOTP = async() => {
 
 export const onRequestOTP = async(otp:number, toPhoneNumber:string) => {
 
-    const accountSid = 'ACd2739a625e08999fc5d1e5bf9929f9be';
-    const authToken = 'b1456a2e19d16ba1102f9bcb10e0a269';
+    const accountSid = '';
+    const authToken = '';
     const client = require('twilio')(accountSid,authToken);
 
     const response = await client.messages.create({
